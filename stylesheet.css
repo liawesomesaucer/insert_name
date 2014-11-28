@@ -25,9 +25,10 @@ a:link, a:visited, a:hover, a:active { color: #fff;
 	float:center; 
 	margin-top:8%; 
 	margin-bottom: 10%;
-	font: 80px/80px Arial, sans-serif; text-align: center;
-	margin-left:1em;
-	letter-spacing: 1em;
+	font: 80px/80px Lucida Console, sans-serif; 
+	text-align: center;
+	margin-left:0.25em;
+	letter-spacing: 0.25em;
 }
 
 .box {
