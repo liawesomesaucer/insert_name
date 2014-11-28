@@ -10,13 +10,6 @@
 	<script type="text/javascript" src="Scripts/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
 
-	<script>
-	$(document).ready(function(){
-		$("a").click(function(event){
-			alert("You clicked me!");
-		});
-	});
-	</script>
 	<!--<script>
   $(function() {
     $( "input[type=submit], a, button" )
@@ -47,10 +40,10 @@
 <!--box-->
 <div class="box">
 	<ul class="nav">
-		<li><a href="#">BUTTON!!!!!</a></li>
-		<li><a href="javascript:page2();">BUTTON!!!!!</a></li>
-		<li><a href="javascript:page3();">BUTTON!!!!!</a></li>
-		<li><a href="javascript:page4();">BUTTON!!!!!</a></li>
+		<li><a id="button1" href="#">BUTTON1!!!!!</a></li>
+		<li><a id="button2" href="javascript:page2();">BUTTON2!!!!!</a></li>
+		<li><a id="button3" href="javascript:page3();">BUTTON3!!!!!</a></li>
+		<li><a id="button4" href="javascript:page4();">BUTTON4!!!!!</a></li>
 	</ul>
 
 <!-- </div>
@@ -59,6 +52,24 @@
 		press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons 
 	</p>
 </div>
+
+
+	<script>
+	$(document).ready(function(){
+		$("#button1").click(function(event){
+			$( ".info" ).text( "Ohhhhhh yesss you pressed my first button");
+		});
+		$("#button2").click(function(event){
+			$( ".info" ).text( "Ohhh yess keep going");
+		});
+		$("#button3").click(function(event){
+			$( ".info" ).text( "Babe pleeeeeze");
+		});		
+		$("#button4").click(function(event){
+			$( ".info" ).text( "Ohhhhhh YYESSSSESYEYSYYESYSYESYES");
+		});
+	});
+	</script>
 
 <div class="foot">
 	<p>Add footer here</p>
