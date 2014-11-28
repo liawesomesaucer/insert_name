@@ -1,0 +1,88 @@
+
+html {
+	margin:0px;
+	padding:0px;
+	text-indent:0px;
+	font: 16px/16px Segoe UI Light, "Arial", sans-serif;
+}
+
+body {
+    background: url(ocean2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+background-color:#cccccc;
+}
+
+a:link, a:visited, a:hover, a:active { color: #fff;
+       text-decoration: none;
+ }
+
+.title {
+	margin:0px; 
+	padding:0px; 
+	float:center; 
+	margin-top:8%; 
+	margin-bottom: 10%;
+	font: 80px/80px Arial, sans-serif; text-align: center;
+	margin-left:100px;
+	letter-spacing: 100px;
+}
+
+.box {
+	float: center;
+	margin:30%; 
+	margin-top:0%;
+	margin-bottom:0%;
+	width: 40%; 
+	min-height:30%;
+	background-color: #f5f5f5;
+}
+
+ul.nav {
+	list-style-type:none;
+	width:100%;
+	margin:0px;
+	padding:0px;
+}
+
+ul.nav a {
+	display:block;
+	float:left;
+	width: 25%;
+	color:#000000;
+	background-color: #cccccc;
+	margin: 0px;
+	text-align:center;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	padding-top:2%;
+	padding-bottom:2%;
+	font: 18px/20px Segoe UI Light, "Times New Roman", serif;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+ul.nav a:visited {
+	color:#000000;
+}
+
+ul.nav a:hover {
+	background-color: #000000;
+	color:#ffffff;
+}
+
+.info {
+	padding:2%;
+}
+
+.foot {
+	width:100%;
+	padding:0px;
+	margin:0px;
+	height: 16px;
+	background-color: #f5f5f5;
+	text-align:center;
+	margin-top: 7.5%;
+}
