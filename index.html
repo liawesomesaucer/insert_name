@@ -52,12 +52,18 @@
 		var expanded = 1;
 		$(".expand").click(function(event){
 			if (expanded==1) {
+				//this expands the text
 				$( ".info" ).css('max-height', 'none');
+				$( ".info" ).animate({height:"50%"});
+				$( ".info" ).css('overflow', 'scroll');
 				$( ".expand" ).text( "Hide" );
 				expanded = 0
 			}
 			else {
-				$( ".info" ).css('max-height', '24%');
+				//this contracts the text
+				//$( ".info" ).css('max-height', '24%');
+				$( ".info" ).animate({height:"24%"});
+				$( ".info" ).css('overflow', 'hidden');
 				$( ".expand" ).text( "Expand" );
 				expanded = 1
 			}
