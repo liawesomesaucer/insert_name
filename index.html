@@ -9,26 +9,36 @@
 
 	<script type="text/javascript" src="Scripts/jquery-1.4.2.min.js"></script>
 	<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.4.2.min.js"></script>
-
-	<!--<script>
-  $(function() {
-    $( "input[type=submit], a, button" )
-      .button()
-      .click(function( event ) {
-        event.preventDefault();
-      });
-  });
-  </script>-->
-  <!--<script>
-  $function() {
-  	$("page1[type=submit], a, button")
-  	.page1()
-      .click($(.info).text("hellllooooo")) {
-
-      event.preventDefault();
-  });
-});
-  </script>-->
+	
+  <script>
+	$(document).ready(function(){
+		$("#button1").click(function(event){
+			$( ".info" ).text( "Ohhhhhh yesss you pressed my first button");
+		});
+		$("#button2").click(function(event){
+			$( ".info" ).text( "Ohhh yess keep going");
+		});
+		$("#button3").click(function(event){
+			$( ".info" ).text( "Babe pleeeeeze");
+		});		
+		$("#button4").click(function(event){
+			$( ".info" ).text( "Ohhhhhh YYESSSSESYEYSYYESYSYESYES");
+		});
+		var expanded = 1;
+		$(".expand").click(function(event){
+			if (expanded==1) {
+				$( ".info" ).css('max-height', 'none');
+				$( ".expand" ).text( "Hide" );
+				expanded = 0
+			}
+			else {
+				$( ".info" ).css('max-height', '25%');
+				$( ".expand" ).text( "Expand" );
+				expanded = 1
+			}
+		});
+	});
+	</script>
 </head>
 
 <body>
@@ -49,27 +59,10 @@
 <!-- </div>
 <div class="box"> -->
 	<p class="info">
-		press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons 
+		press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons press my buttons end
 	</p>
+	<div class="expand"><a href="#">Expand</a></div>
 </div>
-
-
-	<script>
-	$(document).ready(function(){
-		$("#button1").click(function(event){
-			$( ".info" ).text( "Ohhhhhh yesss you pressed my first button");
-		});
-		$("#button2").click(function(event){
-			$( ".info" ).text( "Ohhh yess keep going");
-		});
-		$("#button3").click(function(event){
-			$( ".info" ).text( "Babe pleeeeeze");
-		});		
-		$("#button4").click(function(event){
-			$( ".info" ).text( "Ohhhhhh YYESSSSESYEYSYYESYSYESYES");
-		});
-	});
-	</script>
 
 <div class="foot">
 	<a href="https://github.com/liawesomesaucer/insert_name" style="color:#000000"><p>Click here to see the GitHub for this project</p></a>

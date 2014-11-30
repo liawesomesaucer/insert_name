@@ -24,7 +24,7 @@ a:link, a:visited, a:hover, a:active { color: #fff;
 	padding:0px; 
 	float:center; 
 	margin-top:8%; 
-	margin-bottom: 10%;
+	margin-bottom: 0%;
 	font: 80px/80px Lucida Console, sans-serif; 
 	text-align: center;
 	margin-left:0.25em;
@@ -37,7 +37,7 @@ a:link, a:visited, a:hover, a:active { color: #fff;
 	margin-top:0%;
 	margin-bottom:0%;
 	width: 32em;
-	min-height:30%;
+	/*min-height:30%;*/
 	background-color: #f5f5f5;
 }
 
@@ -76,6 +76,19 @@ ul.nav a:hover {
 
 .info {
 	padding:2%;
+	overflow:hidden;
+	max-height:25%;
+}
+
+.expand {
+	height: 20px;
+	background-color:#ffffff;
+	width:100%;
+	text-align:center;
+}
+
+.expand a {
+	color:#000000;
 }
 
 .foot {
